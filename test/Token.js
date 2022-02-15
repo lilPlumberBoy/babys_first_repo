@@ -1,5 +1,4 @@
 const { expect } = require("chai");
-
 describe("Token Contract", function () {
 	it("Deployment should assign the total supply of tokens / 2 to owner", async function () {
 
@@ -37,8 +36,11 @@ describe("Token Contract", function () {
 	});
 	describe("Transactions", function () {
 		it("Should transfer tokens between accounts", async function () {
+			// adding addrs to test a transaction
 			const [owner, addr1, addr2] = await ethers.getSigners();
+			// creating a factory for instances of our contract
 			const Token = await ethers.getContractFactory("Token");
+			// deploying an instance of our contract
 			const hardhatToken = await Token.deploy();
 			// Transfer 50 tokens from owner to addr1
 			await hardhatToken.transfer(addr1.address, 50);
