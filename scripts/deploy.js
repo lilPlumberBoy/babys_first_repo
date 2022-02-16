@@ -5,15 +5,18 @@ async function main() {
 
 	console.log("Account balance:", (await deployer.getBalance()).toString());
 
+        // Token deploy
         const Token = await ethers.getContractFactory("Token");
-	const token = await Token.deploy();
+	const token = await Token.deploy(); 
+	await token.deployed();
+	console.log("Token deployed to:", token.address);
+
+        // Greeter deploy
 	const Greeter = await ethers.getContractFactory("Greeter");
 	const greeter = await Greeter.deploy('greeting inserted');
-	await token.deployed();
 	await greeter.deployed();
-
 	console.log("Greeter deployed to:", greeter.address);
-	console.log("Token deployed to:", token.address);
+
 }
 
 main()
