@@ -13,10 +13,6 @@ task("accounts", "Prints the list of accounts", async (taskArgs, hre) => {
   }
 });
 
-// You need to export an object to set up your config
-// Go to https://hardhat.org/config/ to learn more
-require("@nomiclabs/hardhat-waffle");
-require('@nomiclabs/hardhat-ethers');
 /**
  * @type import('hardhat/config').HardhatUserConfig
  */
@@ -26,13 +22,15 @@ const ROPSTEN_PRIVATE_KEY = "496a6aa7807ac22615c52380a3b8c14bdc4db80b3d751f425ba
 
 module.exports = {
   solidity: {
-          compilers: [
-                  { version: "0.8.4",
-                  },
-                  { version: "0.4.21",
-                    settings: {},
-                  },
-          ],
+    compilers: [
+      {
+        version: "0.8.4",
+      },
+      {
+        version: "0.4.21",
+        settings: {},
+      },
+    ],
   },
   networks: {
     ropsten: {
@@ -41,6 +39,6 @@ module.exports = {
     }
   },
   namedAccounts: {
-        deployer: 0
+    deployer: 0
   },
 };
