@@ -1,6 +1,7 @@
 require("@nomiclabs/hardhat-waffle");
 require('hardhat-deploy');
 require("@nomiclabs/hardhat-ethers");
+require("@nomiclabs/hardhat-web3");
 
 
 // This is a sample Hardhat task. To learn how to create your own go to
@@ -13,6 +14,15 @@ task("accounts", "Prints the list of accounts", async (taskArgs, hre) => {
   }
 });
 
+task("balance", "Prints an account's ether balance")
+  .addParam("account", "The account's address")
+  .setAction(async (taskArgs) => {
+        const account = web3.utils.toChecksumAddress(taskArgs.account);
+        const balance = await web3.eth.getBalance(account);
+
+        console.log(web3.utils.fromWei(balance, "ether"), "ETH");
+  });
+  
 /**
  * @type import('hardhat/config').HardhatUserConfig
  */
