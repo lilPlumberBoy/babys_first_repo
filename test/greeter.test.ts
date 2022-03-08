@@ -1,6 +1,5 @@
-const { expect } = require("chai");
-const { ethers } = require("hardhat");
-const { deployContract } = waffle;
+import { expect } from "./chai-setup";
+import { ethers, deployments, getNamedAccounts } from 'hardhat';
 
 describe("Greeter", function () {
   it("Should return the new greeting once it's changed", async function () {

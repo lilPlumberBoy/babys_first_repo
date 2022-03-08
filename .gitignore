@@ -6,10 +6,11 @@ build/
 reports/
 deployments/
 node_modules
-.env
+.venv
 coverage
 coverage.json
 typechain
+.DS_Store
 
 #Hardhat files
 cache

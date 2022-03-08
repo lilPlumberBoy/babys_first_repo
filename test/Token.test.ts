@@ -1,4 +1,6 @@
-const { expect } = require("chai");
+import { expect } from "./chai-setup";
+import { ethers, deployments, getNamedAccounts } from 'hardhat';
+
 describe("Token Contract", function () {
 	it("Deployment should assign the total supply of tokens / 2 to owner", async function () {
 
