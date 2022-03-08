@@ -4,7 +4,7 @@ __pycache__
 .hypothesis/
 build/
 reports/
-
+deployments/
 node_modules
 .env
 coverage
