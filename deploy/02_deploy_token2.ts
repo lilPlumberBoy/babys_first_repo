@@ -14,4 +14,4 @@ const func: DeployFunction = async function (hre: HardhatRuntimeEnvironment) {
   });
 };
 export default func;
-func.tags = ['test_token_2'];
+func.tags = ['Token2'];
