@@ -1,17 +1,17 @@
 import { HardhatRuntimeEnvironment } from 'hardhat/types';
 import { DeployFunction } from 'hardhat-deploy/types';
-const { ethers } = require("@nomiclabs/hardhat-ethers");
 
 const func: DeployFunction = async function (hre: HardhatRuntimeEnvironment) {
-    const { deployments, getNamedAccounts, network } = hre;
+    const { deployments, getNamedAccounts } = hre;
     const { deploy } = deployments;
+
     const { deployer } = await getNamedAccounts();
 
-    await deploy('Greeter', {
+    await deploy('FuzzyId_Deployer', {
         from: deployer,
-        args: ["hello world 001"],
+        args: [],
         log: true,
     });
 };
 export default func;
-func.tags = ['Greeter'];
+func.tags = ['FuzzyId_Deployer'];
