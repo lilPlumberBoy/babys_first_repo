@@ -10,8 +10,8 @@ async function main() {
     const registry = await Registry.attach("0xa513E6E4b8f2a923D98304ec87F64353C4D5C853");
 
     // addRegistry
-    // await registry.addRegistry(formatBytes32String('SaddleUSDPool'), '0x0C8BAe14c9f9BF2c953997C881BEfaC7729FD314');
-    // await registry.addRegistry(formatBytes32String('SaddleUSDPool'), '0x3911F80530595fBd01Ab1516Ab61255d75AEb066');
+    await registry.addRegistry(formatBytes32String('SaddleUSDPool'), '0x0C8BAe14c9f9BF2c953997C881BEfaC7729FD314');
+    await registry.addRegistry(formatBytes32String('SaddleUSDPool'), '0x3911F80530595fBd01Ab1516Ab61255d75AEb066');
 
     // resolveNameToLatestAddress
     console.log('resolveNameToLatestAddress: ', await registry.resolveNameToLatestAddress(formatBytes32String('SaddleUSDPool')))
@@ -21,7 +21,7 @@ async function main() {
 
     // resolveNameToAllAddresses
     console.log('resolveNameToAllAddresses: ', await registry.resolveNameToAllAddresses(formatBytes32String('SaddleUSDPool')))
-
+    console.log('USDv2: ', formatBytes32String('USDv2'))
     // resolveAddressToRegistryData
     const reg_data = await registry.resolveAddressToRegistryData('0x3911F80530595fBd01Ab1516Ab61255d75AEb066')
     const name = parseBytes32String(reg_data['name'])

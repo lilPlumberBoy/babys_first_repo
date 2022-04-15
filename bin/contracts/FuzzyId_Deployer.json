@@ -1,0 +1,317 @@
+{
+    "contractName": "FuzzyId_Deployer",
+    "abi": [
+        {
+            "constant": false,
+            "inputs": [
+                {
+                    "name": "salt",
+                    "type": "bytes32"
+                }
+            ],
+            "name": "deploy",
+            "outputs": [],
+            "payable": false,
+            "stateMutability": "nonpayable",
+            "type": "function"
+        }
+    ],
+    "metadata": "{\"compiler\":{\"version\":\"0.5.0+commit.1d4f565a\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":false,\"inputs\":[{\"name\":\"salt\",\"type\":\"bytes32\"}],\"name\":\"deploy\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/Users/michaeldaly/github_projects/babys_first_repo/contracts/FuzzyId_deployer.sol\":\"FuzzyId_Deployer\"},\"evmVersion\":\"byzantium\",\"libraries\":{},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/michaeldaly/github_projects/babys_first_repo/contracts/FuzzyId_deployer.sol\":{\"keccak256\":\"0x1b644c07a764764238498764059175d02818d337ebf5211761d5cf7328cb1b6f\",\"urls\":[\"bzzr://b9b3b53715d1a57310bfdb3078733417efa092680d2f15abbf80f790a1cf0d56\"]}},\"version\":1}",
+    "bytecode": "61022060405261017d60808181529061022760a03980516100289160009160209091019061003b565b5034801561003557600080fd5b506100d6565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f1061007c57805160ff19168380011785556100a9565b828001600101855582156100a9579182015b828111156100a957825182559160200191906001019061008e565b506100b59291506100b9565b5090565b6100d391905b808211156100b557600081556001016100bf565b90565b610142806100e56000396000f3fe6080604052600436106100405763ffffffff7c01000000000000000000000000000000000000000000000000000000006000350416632b85ba388114610045575b600080fd5b34801561005157600080fd5b5061006f6004803603602081101561006857600080fd5b5035610071565b005b60008054604080516020601f60026000196101006001881615020190951694909404938401819004810282018101909252828152606093909290918301828280156100fd5780601f106100d2576101008083540402835291602001916100fd565b820191906000526020600020905b8154815290600101906020018083116100e057829003601f168201915b505050505090506000828251602084016000f55050505056fea165627a7a7230582041c6f4f137209a63adc2f2dd780cb86b457154b1e5d9e29b21fa6d631b9146270029608060405234801561001057600080fd5b5061015d806100206000396000f3fe608060405234801561001057600080fd5b50600436106100365760003560e01c806306fdde031461003b5780637872ab4914610059575b600080fd5b61004361009d565b6040518082815260200191505060405180910390f35b61009b6004803603602081101561006f57600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff1690602001909291905050506100c5565b005b60007f736d617278000000000000000000000000000000000000000000000000000000905090565b8073ffffffffffffffffffffffffffffffffffffffff1663380c7a676040518163ffffffff1660e01b8152600401600060405180830381600087803b15801561010d57600080fd5b505af1158015610121573d6000803e3d6000fd5b505050505056fea265627a7a72315820fb2fc7a07f0eebf799c680bb1526641d2d905c19393adf340a04e48c9b527de964736f6c634300050c0032",
+    "deployedBytecode": "6080604052600436106100405763ffffffff7c01000000000000000000000000000000000000000000000000000000006000350416632b85ba388114610045575b600080fd5b34801561005157600080fd5b5061006f6004803603602081101561006857600080fd5b5035610071565b005b60008054604080516020601f60026000196101006001881615020190951694909404938401819004810282018101909252828152606093909290918301828280156100fd5780601f106100d2576101008083540402835291602001916100fd565b820191906000526020600020905b8154815290600101906020018083116100e057829003601f168201915b505050505090506000828251602084016000f55050505056fea165627a7a7230582041c6f4f137209a63adc2f2dd780cb86b457154b1e5d9e29b21fa6d631b9146270029",
+    "sourceMap": "57:800:0:-;25:1062;57:800;;25:1062;57:800;;;25:1062;57:800;;;;;;;;;;;;;;;:::i;:::-;;25:1062;8:9:-1;5:2;;;30:1;27;20:12;5:2;25:1062:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;25:1062:0;;;-1:-1:-1;25:1062:0;:::i;:::-;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;:::o;:::-;;;;;;;",
+    "deployedSourceMap": "25:1062:0:-;;;;;;;;;;;;;;;;;;;;;;;864:221;;8:9:-1;5:2;;;30:1;27;20:12;5:2;864:221:0;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;-1:-1;864:221:0;;;;;;935:16;911:40;;;;;;;;-1:-1:-1;;911:40:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:21;;:40;;935:16;;911:40;;935:16;911:40;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;961:12;1064:4;1053:8;1047:15;1040:4;1030:8;1026:19;1023:1;1015:54;-1:-1:-1;;;;993:86:0:o",
+    "sourcePath": "/Users/michaeldaly/github_projects/babys_first_repo/contracts/FuzzyId_deployer.sol",
+    "compiler": {
+        "name": "solc",
+        "version": "0.5.0+commit.1d4f565a"
+    },
+    "ast": {
+        "absolutePath": "/Users/michaeldaly/github_projects/babys_first_repo/contracts/FuzzyId_deployer.sol",
+        "exportedSymbols": {
+            "FuzzyId_Deployer": [
+                19
+            ]
+        },
+        "id": 20,
+        "nodeType": "SourceUnit",
+        "nodes": [
+            {
+                "id": 1,
+                "literals": [
+                    "solidity",
+                    "^",
+                    "0.5",
+                    ".0"
+                ],
+                "nodeType": "PragmaDirective",
+                "src": "0:23:0"
+            },
+            {
+                "baseContracts": [],
+                "contractDependencies": [],
+                "contractKind": "contract",
+                "documentation": null,
+                "fullyImplemented": true,
+                "id": 19,
+                "linearizedBaseContracts": [
+                    19
+                ],
+                "name": "FuzzyId_Deployer",
+                "nodeType": "ContractDefinition",
+                "nodes": [
+                    {
+                        "constant": false,
+                        "id": 4,
+                        "name": "contractBytecode",
+                        "nodeType": "VariableDeclaration",
+                        "scope": 19,
+                        "src": "57:800:0",
+                        "stateVariable": true,
+                        "storageLocation": "default",
+                        "typeDescriptions": {
+                            "typeIdentifier": "t_bytes_storage",
+                            "typeString": "bytes"
+                        },
+                        "typeName": {
+                            "id": 2,
+                            "name": "bytes",
+                            "nodeType": "ElementaryTypeName",
+                            "src": "57:5:0",
+                            "typeDescriptions": {
+                                "typeIdentifier": "t_bytes_storage_ptr",
+                                "typeString": "bytes"
+                            }
+                        },
+                        "value": {
+                            "argumentTypes": null,
+                            "hexValue": "608060405234801561001057600080fd5b5061015d806100206000396000f3fe608060405234801561001057600080fd5b50600436106100365760003560e01c806306fdde031461003b5780637872ab4914610059575b600080fd5b61004361009d565b6040518082815260200191505060405180910390f35b61009b6004803603602081101561006f57600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff1690602001909291905050506100c5565b005b60007f736d617278000000000000000000000000000000000000000000000000000000905090565b8073ffffffffffffffffffffffffffffffffffffffff1663380c7a676040518163ffffffff1660e01b8152600401600060405180830381600087803b15801561010d57600080fd5b505af1158015610121573d6000803e3d6000fd5b505050505056fea265627a7a72315820fb2fc7a07f0eebf799c680bb1526641d2d905c19393adf340a04e48c9b527de964736f6c634300050c0032",
+                            "id": 3,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": true,
+                            "kind": "string",
+                            "lValueRequested": false,
+                            "nodeType": "Literal",
+                            "src": "90:767:0",
+                            "subdenomination": null,
+                            "typeDescriptions": {
+                                "typeIdentifier": "t_stringliteral_4670da3f633e838c2746ca61c370ba3dbd257b86b28b78449f4185480e2aba51",
+                                "typeString": "literal_string (contains invalid UTF-8 sequence at position 1)"
+                            },
+                            "value": null
+                        },
+                        "visibility": "internal"
+                    },
+                    {
+                        "body": {
+                            "id": 17,
+                            "nodeType": "Block",
+                            "src": "901:184:0",
+                            "statements": [
+                                {
+                                    "assignments": [
+                                        10
+                                    ],
+                                    "declarations": [
+                                        {
+                                            "constant": false,
+                                            "id": 10,
+                                            "name": "bytecode",
+                                            "nodeType": "VariableDeclaration",
+                                            "scope": 17,
+                                            "src": "911:21:0",
+                                            "stateVariable": false,
+                                            "storageLocation": "memory",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_bytes_memory_ptr",
+                                                "typeString": "bytes"
+                                            },
+                                            "typeName": {
+                                                "id": 9,
+                                                "name": "bytes",
+                                                "nodeType": "ElementaryTypeName",
+                                                "src": "911:5:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_bytes_storage_ptr",
+                                                    "typeString": "bytes"
+                                                }
+                                            },
+                                            "value": null,
+                                            "visibility": "internal"
+                                        }
+                                    ],
+                                    "id": 12,
+                                    "initialValue": {
+                                        "argumentTypes": null,
+                                        "id": 11,
+                                        "name": "contractBytecode",
+                                        "nodeType": "Identifier",
+                                        "overloadedDeclarations": [],
+                                        "referencedDeclaration": 4,
+                                        "src": "935:16:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_bytes_storage",
+                                            "typeString": "bytes storage ref"
+                                        }
+                                    },
+                                    "nodeType": "VariableDeclarationStatement",
+                                    "src": "911:40:0"
+                                },
+                                {
+                                    "assignments": [
+                                        14
+                                    ],
+                                    "declarations": [
+                                        {
+                                            "constant": false,
+                                            "id": 14,
+                                            "name": "addr",
+                                            "nodeType": "VariableDeclaration",
+                                            "scope": 17,
+                                            "src": "961:12:0",
+                                            "stateVariable": false,
+                                            "storageLocation": "default",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_address",
+                                                "typeString": "address"
+                                            },
+                                            "typeName": {
+                                                "id": 13,
+                                                "name": "address",
+                                                "nodeType": "ElementaryTypeName",
+                                                "src": "961:7:0",
+                                                "stateMutability": "nonpayable",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_address",
+                                                    "typeString": "address"
+                                                }
+                                            },
+                                            "value": null,
+                                            "visibility": "internal"
+                                        }
+                                    ],
+                                    "id": 15,
+                                    "initialValue": null,
+                                    "nodeType": "VariableDeclarationStatement",
+                                    "src": "961:12:0"
+                                },
+                                {
+                                    "externalReferences": [
+                                        {
+                                            "addr": {
+                                                "declaration": 14,
+                                                "isOffset": false,
+                                                "isSlot": false,
+                                                "src": "1007:4:0",
+                                                "valueSize": 1
+                                            }
+                                        },
+                                        {
+                                            "bytecode": {
+                                                "declaration": 10,
+                                                "isOffset": false,
+                                                "isSlot": false,
+                                                "src": "1053:8:0",
+                                                "valueSize": 1
+                                            }
+                                        },
+                                        {
+                                            "bytecode": {
+                                                "declaration": 10,
+                                                "isOffset": false,
+                                                "isSlot": false,
+                                                "src": "1030:8:0",
+                                                "valueSize": 1
+                                            }
+                                        },
+                                        {
+                                            "salt": {
+                                                "declaration": 6,
+                                                "isOffset": false,
+                                                "isSlot": false,
+                                                "src": "1064:4:0",
+                                                "valueSize": 1
+                                            }
+                                        }
+                                    ],
+                                    "id": 16,
+                                    "nodeType": "InlineAssembly",
+                                    "operations": "{\n    addr := create2(0, add(bytecode, 0x20), mload(bytecode), salt)\n}",
+                                    "src": "984:101:0"
+                                }
+                            ]
+                        },
+                        "documentation": null,
+                        "id": 18,
+                        "implemented": true,
+                        "kind": "function",
+                        "modifiers": [],
+                        "name": "deploy",
+                        "nodeType": "FunctionDefinition",
+                        "parameters": {
+                            "id": 7,
+                            "nodeType": "ParameterList",
+                            "parameters": [
+                                {
+                                    "constant": false,
+                                    "id": 6,
+                                    "name": "salt",
+                                    "nodeType": "VariableDeclaration",
+                                    "scope": 18,
+                                    "src": "880:12:0",
+                                    "stateVariable": false,
+                                    "storageLocation": "default",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_bytes32",
+                                        "typeString": "bytes32"
+                                    },
+                                    "typeName": {
+                                        "id": 5,
+                                        "name": "bytes32",
+                                        "nodeType": "ElementaryTypeName",
+                                        "src": "880:7:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_bytes32",
+                                            "typeString": "bytes32"
+                                        }
+                                    },
+                                    "value": null,
+                                    "visibility": "internal"
+                                }
+                            ],
+                            "src": "879:14:0"
+                        },
+                        "returnParameters": {
+                            "id": 8,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "901:0:0"
+                        },
+                        "scope": 19,
+                        "src": "864:221:0",
+                        "stateMutability": "nonpayable",
+                        "superFunction": null,
+                        "visibility": "public"
+                    }
+                ],
+                "scope": 20,
+                "src": "25:1062:0"
+            }
+        ],
+        "src": "0:1088:0"
+    },
+    "functionHashes": {
+        "deploy(bytes32)": "2b85ba38"
+    },
+    "gasEstimates": {
+        "creation": {
+            "codeDepositCost": "64400",
+            "executionCost": "infinite",
+            "totalCost": "infinite"
+        },
+        "external": {
+            "deploy(bytes32)": "infinite"
+        }
+    }
+}

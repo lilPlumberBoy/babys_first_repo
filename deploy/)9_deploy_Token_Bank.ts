@@ -7,11 +7,12 @@ const func: DeployFunction = async function (hre: HardhatRuntimeEnvironment) {
 
     const { deployer } = await getNamedAccounts();
 
-    await deploy('registry', {
+    await deploy('TokenBankChallenge', {
         from: deployer,
-        args: [],
+        gasLimit: 4000000,
+        args: ['0xF65426fFE174E0F636A8F739d7a2196D9A44Eda9'],
         log: true,
     });
 };
 export default func;
-func.tags = ['registry'];
+func.tags = ['TokenBankChallenge'];
